@@ -7,7 +7,7 @@
 .header-container {
   position: fixed;
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 30px;
   border-bottom: 1px solid black;
 }
 
@@ -31,8 +31,7 @@
 
 .logo span {
   color: MediumAquamarine;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-left: 15px;
   border: 1px solid blue;
 
 }
@@ -54,12 +53,16 @@
 }
 
 .main-content {
+  position: relative;
+  top: 110px;
   display: flex;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
   border: 2px solid black;
 }
 
@@ -77,4 +80,27 @@
 
 .story {
   border: 1px solid blue;
+}
+
+.headline {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.story-image .headline{
+font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story-image {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.story-image.lead-story {
+  justify-content: flex-start;
+  align-items: flex-start;
 }
